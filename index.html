@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Giveaway</title>
+    <link rel="stylesheet" href="../Web-Giveaway/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" style="border-radius: 50px 5px;" alt="logo" class="logo">
+        <h1>eubrunodev<br>Giveaway system</h1>
+        <hr>
+    </header>
+
+    <main class="app">
+        <h3> <span style="color: black;">🎁 Web Giveaway 🎁</span></h3>
+        <p>Sistema de sorteio por números <span style="color: black;"> <br>ex: entre: 1 a 100, será sorteado um número entre eles </p>
+        <hr>
+        <div class="formulario">
+            <label for="inBetweenNumber">Entre:</label>
+            <input type="number" placeholder="ex: 1" name="inBetweenNumber" id="inBetweenNumber">
+            
+            <label for="andNumber">a:</label>
+            <input type="number"  placeholder="ex: 1000" name="andNumber" id="andNumber">
+
+            <button id="buttonSortear">Sortear Número</button>
+            <!--
+                <button id="buttonSomar">Somar Número</button>
+            -->
+            <button id="buttonLimpar" style="background-color: rgb(212, 55, 76);">Limpar</button>
+
+            <div class="resultado" id="painelResultado">
+                <h3 style="color: white;" id="numeroSorteado">Número sorteado:</h3>
+                <p id="resultado">1, 2, 3, 4</p>
+                <button href="index.html" id="buttonVoltar" style="background-color: rgb(247, 175, 42);; color: black;">Voltar ao menu</button>
+            </div>
+            <!--
+                <div class="soma" id="painelSoma">
+                <h3 style="color: white;">Resposta:</h3>
+                <p id="soma">1, 2, 3, 4</p>
+            </div>
+            -->
+        </div>
+    </main>
+    <footer style="background-color: white;">
+        <p style="align-items: center; text-align: center; background-color: black; color: white; padding: 10px;">
+            DESENVOLVIDO POR: <button style="background-color: red; padding: 10px; font-size: 15px; border-radius: 10px;" id="githubButton">eubrunodev</button> 
+        </p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
